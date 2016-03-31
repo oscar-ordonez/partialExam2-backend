@@ -15,6 +15,7 @@ exports.createUser = {
       email : request.payload.email,
       name : request.payload.name,
       phone : request.payload.phone,
+      trabajosAplicados : request.payload.trabajosAplicados,
       scope : request.payload.scope
     });
     newUser.save(function (err) {
@@ -47,7 +48,8 @@ exports.updateUser = {
         password: SHA3(request.payload.password),
         email: request.payload.email,
         name: request.payload.name,
-        phone: request.payload.phone}).exec();
+        phone: request.payload.phone,
+        trabajosAplicados : request.payload.trabajosAplicados}).exec();
     reply("ok");
   }
 }

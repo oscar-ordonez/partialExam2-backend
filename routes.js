@@ -14,7 +14,7 @@ exports.endpoints = [{method: 'GET', path: '/', config: {handler: function(reque
 	{method: 'GET', path: '/v1/logout', config: authController.logout},
 
 	{method: 'POST', path: '/v1/createTrabajo', config: trabajoController.createTrabajo},
-	{method: 'GET', path: '/v1/trabajos', config: usersController.getTrabajos},
-	{method: 'PUT', path: '/v1/updateTrabajo/{trabajoId}', config: usersController.updateTrabajo},
-	{method: 'GET', path: '/v1/getTrabajo/{trabajoId}', config: usersController.getTrabajo},
+	{method: 'GET', path: '/v1/trabajos', config: trabajoController.getTrabajos},
+	{method: 'PUT', path: '/v1/updateTrabajo/{trabajoId}', config: trabajoController.updateTrabajo},
+	{method: 'GET', path: '/v1/getTrabajo/{trabajoId}', config: trabajoController.getTrabajo},
 ];

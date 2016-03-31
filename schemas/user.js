@@ -7,6 +7,7 @@ var UserSchema = new mongoose.Schema({
   email : String,
   name : String,
   phone : String,
+  trabajosAplicados : [String],
   scope : [String]
 });
 
